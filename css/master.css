@@ -92,6 +92,13 @@ body {
 @media only screen and (max-width: 992px) {
   .burger {
     display: block;
+    padding: .5rem;
+    border-radius: 10px;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    box-shadow: 1px 4px 4px rgba(0,0,0,0.1);
+    z-index: 9999;
   }
 
   .logo .titulo {
