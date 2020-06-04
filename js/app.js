@@ -1,14 +1,22 @@
 $(document).ready( () => {
-
+  //burger menu
   $(".burger").click(() => {
     $(".menu").animate({
       width: ["toggle", "swing"],
-    }, 1000);
+    }, 600);
   });
 
+  $(".burger").hover(()=>{
+    $(".line").toggleClass("efeito");
+  });
 
-  $(window).scroll(() => {
-    $(".burger").addClass("shadow", 1000);
+  //shadow burger
+  $(window).scroll(()=>{
+    if($(window).scrollTop() == 0) {
+      $(".burger").removeClass("shadow");
+    } else {
+      $(".burger").addClass("shadow");
+    }
   });
 
 });
