@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #0a4d95;
+  --primary-color: #0071bc;
 }
 
 * {
@@ -81,6 +81,10 @@ body {
   margin: 4px 0;
   background-color: var(--primary-color);
   border-radius: 10px;
+}
+
+.line:nth-child(3) {
+  width: 15px;
 }
 
 /* menu mobile */
