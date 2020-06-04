@@ -1,11 +1,12 @@
 $(document).ready( () => {
-  //burger menu
+  //menu
   $(".burger").click(() => {
     $(".menu").animate({
-      width: ["toggle", "swing"],
+      width: "toggle"
     }, 600);
   });
 
+  //line burger efeito
   $(".burger").hover(()=>{
     $(".line").toggleClass("efeito");
   });
