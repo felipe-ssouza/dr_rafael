@@ -10,43 +10,38 @@
 }
 
 body {
-  position: relative;
+  /* position: relative; */
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
 
-/**HEADER**/
+.temp {
+  padding: 2vh;
+}
 
-#header {
-  box-shadow: 1px 4px 2px rgba(0, 0, 0, 0.1);
+header#header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 15vh;
-  width: 100vw;
+  height: 100px;
+  width: 100%;
+  background: #FFF;
   z-index: 999;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-#header .wrapper {
+header#header .wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: .5rem;
-  margin: auto;
-  padding-top: 1vh;
-}
-
-.nob {
-  /* padding-top: 100vh; */
-  z-index: -1;
+  padding: 2vh 2vw;
 }
 
 .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 .5rem;
   color: var(--primary-color);
 }
 
@@ -59,8 +54,7 @@ body {
 }
 
 .menu-container {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
 }
 
 .menu {
@@ -82,26 +76,24 @@ body {
   background: #FFF;
   padding: .5rem;
   border-radius: 10px;
-  position: fixed;
-  top: 4vh;
   z-index: 999;
   outline: none;
-  transition: ease 1s;
+  transition: ease all 1s;
 }
 
 .shadow {
   box-shadow: 1px 2px 6px rgba(0,0,0,0.1);
-  transition: ease 1s;
+  transition: ease all 1s;
 }
 
 .up {
   top: 1vh;
-  transition: ease 1s;
+  transition: ease all 1s;
 }
 
-.efeito {
+.stretch {
   padding-left: 5px !important;
-  transition: ease 1s;
+  transition: ease all 1s;
 }
 
 .line {
@@ -137,20 +129,20 @@ body {
 
   .logo .titulo {
     font-size: 12px;
-    transition: ease 1s;
+    transition: ease all 1s;
   }
 
   .menu {
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
-    width: 80%;
-    height: 100%;
     position: fixed;
     top: 0;
     left: -100vw;
-    opacity: 0.9;
+    width: 260px;
+    height: 100vh;
     background-color: var(--primary-color) ;
+    opacity: 0.95;
     transition: ease all 1s;
   }
 
@@ -162,7 +154,8 @@ body {
   .menu li a {
     padding: 2rem 1rem;
     color: #E4E4E8;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
   }
 
   .menu li a:hover {
@@ -174,4 +167,86 @@ body {
   .burger {
     right: 10px;
   }
+}
+
+
+#carousel {
+  position: relative;
+  margin-top: 100px;
+}
+
+#carousel img {
+  width: 100%;
+}
+
+#carousel img.small {
+  display: none;
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  color: var(--primary-color);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  border: 2px solid var(--primary-color);
+  border-top: transparent;
+}
+
+.r-arrow {
+  right: 2vw;
+  border-left: transparent;
+  transform: translateY(-50%) rotate(-45deg);
+  -ms-transform: translateY(-50%) rotate(-45deg);
+}
+
+.l-arrow {
+  left: 2vw;
+  border-right: transparent;
+  transform: translateY(-50%) rotate(45deg);
+  -ms-transform: translate(-50%) rotate(45deg);
+}
+
+#carousel .box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  left: 100px;
+  background: #FFF;
+  border-left: 4px solid var(--primary-color);
+  padding: .5rem 1rem;
+}
+
+#carousel .box .titulo {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  #carousel img.large { display: none; }
+
+  #carousel img.small {
+    display: block;
+  }
+}
+
+@media (max-width: 768px){
+
+  #carousel .arrow {
+    width: 20px;
+    height: 20px;
+    transition: ease all 1s;
+  }
+
+  #carousel .box {
+    left: 5vh;
+  }
+
+  #carousel .box .titulo {
+    font-size: 12px;
+  }
+
+
 }
