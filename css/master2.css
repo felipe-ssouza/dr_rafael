@@ -10,43 +10,38 @@
 }
 
 body {
-  position: relative;
+  /* position: relative; */
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
 
-/**HEADER**/
+.temp {
+  padding: 2vh;
+}
 
-#header {
-  box-shadow: 1px 4px 2px rgba(0, 0, 0, 0.1);
+header#header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 15vh;
-  width: 100vw;
+  height: 100px;
+  width: 100%;
+  background: #FFF;
   z-index: 999;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-#header .wrapper {
+header#header .wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: .5rem;
-  margin: auto;
-  padding-top: 1vh;
-}
-
-.nob {
-  /* padding-top: 100vh; */
-  z-index: -1;
+  padding: 2vh 1vw;
 }
 
 .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 .5rem;
   color: var(--primary-color);
 }
 
@@ -59,9 +54,9 @@ body {
 }
 
 .menu-container {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
 }
+
 
 .menu {
   display: flex;
@@ -82,11 +77,9 @@ body {
   background: #FFF;
   padding: .5rem;
   border-radius: 10px;
-  position: fixed;
-  top: 4vh;
   z-index: 999;
   outline: none;
-  transition: ease 1s;
+  transition: ease all 1s;
 }
 
 .shadow {
@@ -137,7 +130,11 @@ body {
 
   .logo .titulo {
     font-size: 12px;
-    transition: ease 1s;
+    transition: ease all 1s;
+  }
+
+  .menu-container {
+    
   }
 
   .menu {
@@ -145,11 +142,11 @@ body {
     justify-content: center;
     align-items: baseline;
     width: 80%;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: -100vw;
-    opacity: 0.9;
+    opacity: 0.95;
     background-color: var(--primary-color) ;
     transition: ease all 1s;
   }
