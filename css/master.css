@@ -209,14 +209,8 @@ header#header .wrapper {
 }
 
 #carousel .box {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  left: 100px;
   background: #FFF;
-  border-left: 4px solid var(--primary-color);
-  padding: .5rem 1rem;
+  padding: 1rem 2rem;
 }
 
 #carousel .box .titulo {
@@ -224,16 +218,89 @@ header#header .wrapper {
   font-weight: 600;
 }
 
+#carousel .box-1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  left: 100px;
+}
+
+#carousel .box-1::before {
+  display: block;
+  content: "";
+  background-color: var(--primary-color);
+  position: absolute;
+  width: 4%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#carousel .box-2 {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+}
+
+#carousel .box-2::before {
+  display: block;
+  content: "";
+  width: 6%;
+  transform: skewX(-20deg);
+  position: absolute;
+  top: 0;
+  right: -2%;
+  bottom: 0;
+  background-color: var(--primary-color);
+  color: #FFF;
+}
+
+#carousel .box-2 .icone {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  font-size: 2rem;
+  color: #FFF;
+}
+
+#carousel .box-2 .titulo {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
 @media (max-width: 600px) {
   #carousel img.large { display: none; }
 
   #carousel img.small {
     display: block;
   }
+
+  #carousel .box {
+    padding: .4rem .8rem;
+  }
+
+  #carousel .box-1 {
+    top: 70%;
+    transform: translateY(-70%);
+    left: 5px !important;
+  }
+
+  #carousel .box-2 {
+    left: 5px !important;
+  }
+
+  #carousel .box-2 .icone {
+    font-size: 1rem;
+  }
 }
 
-@media (max-width: 768px){
 
+@media (max-width: 768px){
   #carousel .arrow {
     width: 20px;
     height: 20px;
