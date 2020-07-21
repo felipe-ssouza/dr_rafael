@@ -808,7 +808,7 @@ header#header .wrapper {
 
 
 #footer .conteudo {
-  margin-top: 2rem;
+  margin: 2rem 0;
   background-color: #FFF;
   color: var(--primary-color);
 }
@@ -892,4 +892,16 @@ header#header .wrapper {
   color: #FFF;
   padding: .5rem 0;
   font-size: .8rem;
+}
+
+
+@media (max-width: 768px) {
+  #footer {
+    text-align: center;
+  }
+
+  .contato, .informacao, .redes {
+    margin-top: 2rem;
+  }
+
 }
