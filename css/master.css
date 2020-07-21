@@ -823,6 +823,7 @@ header#header .wrapper {
 
 
 #footer .conteudo {
+  margin-top: 2rem;
   background-color: #FFF;
   color: var(--primary-color);
 }
@@ -852,6 +853,10 @@ header#header .wrapper {
 
 #footer .contato {
   font-size: .8rem;
+}
+
+#footer .contato .bold {
+  font-size: 1rem;
 }
 
 #footer .contato .icone {
