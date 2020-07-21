@@ -770,23 +770,6 @@ header#header .wrapper {
   position: relative;
 }
 
-
-.my-icon {
-
-}
-#mapa .icone {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  color: #FFF;
-  font-size: 58px;
-  text-shadow: 0 0 4px var(--primary-color);
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--primary-color);
-}
-
 #mapa .bold {
   position: absolute;
   bottom: 0;
@@ -797,7 +780,6 @@ header#header .wrapper {
   color: var(--primary-color);
 }
 
-
 #mapa .icone-marker {
   position: absolute;
   top: 25%;
@@ -806,13 +788,16 @@ header#header .wrapper {
 
 #mapa .background-icone {
   position: relative;
+  background: center/cover url('../imagens/SVG/marker.svg') no-repeat;
+  height: 139px;
+  width: 102px
 }
 
 #mapa .icone {
   position: absolute;
   top: 15%;
-  left: 15%;
-  height: 60px;
+  left: 10%;
+  height: 68px;
   background-color: #FFF;
   border-radius: 50%;
 }
@@ -882,6 +867,11 @@ header#header .wrapper {
   font-family: "Raleway", sans-serif;
   display: block;
   margin-left: 10px;
+}
+
+#footer .informacao li {
+  text-align: left;
+  margin-left: 3em;
 }
 
 
