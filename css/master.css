@@ -894,6 +894,11 @@ header#header .wrapper {
   font-size: .8rem;
 }
 
+#footer .copyrights .acer {
+    height: 100%;
+}
+
+
 
 @media (max-width: 768px) {
   #footer {
@@ -902,6 +907,10 @@ header#header .wrapper {
 
   .contato, .informacao, .redes {
     margin-top: 2rem;
+  }
+
+  #footer .copyrights .acer {
+    height: 50%;
   }
 
 }
