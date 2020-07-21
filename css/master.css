@@ -821,9 +821,19 @@ header#header .wrapper {
   border: 2px solid var(--primary-color);
 }
 
+
 #footer .conteudo {
   background-color: #FFF;
   color: var(--primary-color);
+}
+
+#footer .logo {
+  width: 100%;
+}
+
+#footer .logo img {
+  width: 100%;
+  margin: 2rem 0;
 }
 
 #footer a {
