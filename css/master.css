@@ -913,4 +913,8 @@ header#header .wrapper {
     height: 50%;
   }
 
+  #mapa .icone-marker {
+    left: 25%;
+  }
+
 }
