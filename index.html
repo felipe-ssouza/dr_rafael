@@ -28,7 +28,7 @@
       <a class="logo " href="/">
         <img class="webp-jpg imagem" alt="" data-webp="imagens/WEBP/home/logo_dr_rafael[200x164].webp" data-jpg="imagens/JPG/home/logo_dr_rafael[200x164].jpg">
         <div class="conteudo">
-          <h6 class="bold">Dr Rafael Pinto F. M. de Souza</h6>
+          <h5 class="bold">Dr Rafael Pinto F. M. de Souza</h5>
           <p class="semibold">Médico Oftalmologista - Catarata e Cirurgia de Catarata</p>
         </div>
       </a>
@@ -59,6 +59,23 @@
           </li>
         </ul>
       </nav>
+
+
+        <div class="box-select">
+          <ul class="select">
+            <li class="selected">
+              <a href="">Português</a>
+              <i class="fas fa-angle-down"></i>
+            </li>
+
+            <li class="option">
+              <a href="#" >
+                English
+              </a>
+            </li>
+          </ul>
+        </div>
+
 
     </div>
   </header>
@@ -423,6 +440,26 @@
   <script src="assets/vendor/bootstrap4/js/bootstrap.min.js"></script>
   <script src="js/modernizr-custom.js"></script>
   <script src="js/app.js"></script>
+
+    <script>
+      $(document).ready(()=>{
+
+        $(".option a").click(function() {
+          let option = $(this).html();
+          let select = $(".selected a").html();
+          $(".selected a").html( option );
+          $(this).html( select );
+          $(".option").toggleClass("show");
+        });
+
+        $(".selected a").click((e) => {
+          e.preventDefault();
+          $(".option").toggleClass("show");
+        });
+
+
+      });
+    </script>
 
 </body>
 </html>
