@@ -1,0 +1,16 @@
+desktop menu alinhar - talvez esconder no desk algums elementos
+
+mobile menu icone burger por fechar
+
+
+ajustar os links
+
+footer voltar ao topo
+
+mobile icone whatsapp
+
+
+*talvez mudar icones para os do projeto*
+
+ESPAÇAMENTO EM GERAL 
+abrir depois xd e ver espaçamento dos blocos doutor rafael

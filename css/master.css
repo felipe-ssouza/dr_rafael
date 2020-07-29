@@ -921,6 +921,80 @@ header#header .wrapper {
   border-radius: 50%;
 }
 
+/* DOUTOR */
+
+#doutor {
+  color: var(--primary-color);
+  margin-top: 150px;
+  text-align: center;
+}
+
+#doutor .titulo {
+  margin-bottom: 2rem;
+}
+
+#doutor .banner {
+  width: 100%;
+}
+
+#doutor .banner img {
+  object-fit: contain;
+  width: 100%;
+}
+
+#doutor .intro {
+  margin: 2rem 0;
+}
+
+#doutor .bloco {
+  width: 100%;
+}
+
+#doutor .bloco.santa-casa {
+  margin-bottom: 8rem;
+}
+
+#doutor .bloco .ilustracao {
+  width: 100%;
+  margin: auto;
+}
+
+#doutor .bloco.santa-casa .ilustracao {
+  height: 100%;
+  width: 50%;
+}
+
+#doutor .bloco.policlinica .ilustracao {
+  height: 60%;
+}
+
+#doutor .bloco.familia .ilustracao {
+  height: 65%;
+}
+
+#doutor .bloco .ilustracao img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#doutor .bloco.familia .ilustracao img {
+  object-position: top;
+}
+
+#doutor .bloco .bold, #doutor .bloco .semibold {
+  text-align: left !important;
+}
+
+#doutor .bloco .bold {
+  margin-bottom: 2rem;
+}
+
+
+
+/* /FOOTER/ */
+
 #footer {
   border: 2px solid var(--primary-color);
 }
