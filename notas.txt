@@ -12,5 +12,21 @@ mobile icone whatsapp
 
 *talvez mudar icones para os do projeto*
 
-ESPAÇAMENTO EM GERAL 
-abrir depois xd e ver espaçamento dos blocos doutor rafael
+
+ESPAÇAMENTO EM GERAL
+
+  abrir depois xd e ver espaçamento dos blocos doutor rafael
+
+
+
+
+FAZER
+
+truque de inversão de imagem posisção, bloco texto mobile e desk
+desktop e mobile: usar position absolute em todas as imgens e limmitar tamanho blocos
+
+FANZENDO
+
+transformar galeria em slick slide
+
+FEITO
