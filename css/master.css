@@ -993,7 +993,7 @@ header#header .wrapper {
 
 
 #doutor .galeria {
-  margin: 2rem 0;
+  margin: 2rem 0 0;
 }
 
 #doutor .galeria .ilustracao {
@@ -1012,7 +1012,44 @@ header#header .wrapper {
   object-position: top !important;
 }
 
+#doutor .bloco.catarata {
+  width: 100%;
+}
 
+#doutor .bloco.catarata .cirurgia-catarata {
+  width: 80%;
+  height: 70%;
+  margin: auto;
+  position: relative;
+}
+
+#doutor .bloco.catarata .cirurgia-catarata img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  opacity: 0.5;
+}
+
+#doutor .bloco.catarata .cirurgia-catarata .bold {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  text-align: center;
+  /* transform: translate(-50%, -50%); */
+}
+
+#doutor .bloco.catarata .btn-custom {
+  display: block;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #FFF;
+  padding: 1rem 4rem;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+}
 
 /* /FOOTER/ */
 
