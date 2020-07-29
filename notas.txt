@@ -22,11 +22,14 @@ ESPAÇAMENTO EM GERAL
 
 FAZER
 
-truque de inversão de imagem posisção, bloco texto mobile e desk
-desktop e mobile: usar position absolute em todas as imgens e limmitar tamanho blocos
+- Mobile: truque de inversão de imagem posisção, bloco texto mobile e desk
+- Mobile: usar position absolute em todas as imgens e limmitar tamanho blocos
+- Mobile: mudar catarata bloco para background por amor do mobile
 
 FANZENDO
 
-transformar galeria em slick slide
+- Desktop: página HOME GLAUCOMA
 
 FEITO
+
+- Desktop: transformar galeria em slick slide

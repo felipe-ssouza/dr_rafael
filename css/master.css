@@ -752,7 +752,7 @@ header#header .wrapper {
 
 #especializado .imagem {
   width: 100%;
-  height: 650px;
+  /* height: 650px; */
 }
 
 .webp #especializado .imagem.operacao {
@@ -1050,6 +1050,34 @@ header#header .wrapper {
   left: 50%;
   transform: translate(-50%);
 }
+
+
+/* HOME GLAUCOMA */
+
+.webp .home.glaucoma#carousel #slide01 { background: center/cover url("../imagens/WEBP/glaucoma/glaucoma[1500x757].webp") no-repeat; }
+.no-webp .home.glaucoma#carousel #slide01 { background: center/cover url("../imagens/JPG/glaucoma/glaucoma[1500x757].jpg") no-repeat; }
+
+.home.glaucoma#carousel .conteudo1 .camada {
+  width: 35vw;
+}
+
+@media (max-width: 768px) {
+  .home.glaucoma#carousel .conteudo1 .camada {
+    width: 45vw;
+  }
+}
+
+#especializado .ilustracao {
+  width: 100%;
+  height:  70%;
+}
+
+#especializado .ilustracao img {
+  object-fit: contain;
+  width: 100%;
+  height:  100%;
+}
+
 
 /* /FOOTER/ */
 
