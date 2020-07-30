@@ -1115,28 +1115,45 @@ header#header .wrapper {
   }
 }
 
-/* /FOOTER/ */
+/**CONVENIOS **/
+
+#convenios .box-convenios {
+  margin: 0 0 2rem;
+}
+
+#convenios .box-convenios .bold {
+  background-color: var(--primary-color);
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  height: 60px;
+  padding: 1.5rem 0 0;
+}
+
+#convenios .box-convenios .ilustracao {
+  height: 150px;
+  width: 100%;
+}
+
+#convenios .box-convenios .ilustracao img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+/*FOOTER*/
+
 
 #footer {
   border: 2px solid var(--primary-color);
 }
-
 
 #footer .conteudo {
   margin: 2rem 0;
   background-color: #FFF;
   color: var(--primary-color);
 }
-
-#footer .logo {
-  width: 100%;
-}
-
-#footer .logo img {
-  width: 100%;
-  margin: 2rem 0;
-}
-
 #footer a {
   font-size: .8rem;
   text-decoration: underline;
@@ -1172,11 +1189,6 @@ header#header .wrapper {
   align-items: baseline;
   margin-bottom: 1rem;
 }
-
-/*
-#footer .contato ol li.whatsapp { list-style-type:"\f232"; }
-#footer .contato ol li.envelope { list-style-type:"\f0e0"; }
-#footer .contato ol li.marker { list-style-type:"\f3c5"; } */
 
 #footer .contato li > span {
   font-family: "Raleway", sans-serif;
