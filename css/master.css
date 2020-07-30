@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #0071bc;
-  --secondary-color: #f0f8fe;
+  --primary-color: #0A4D95;
+  --secondary-color: #F1F9FF;
   --tertiary-color: #bce0fd;
 }
 
@@ -1139,6 +1139,70 @@ header#header .wrapper {
   height: 100%;
   width: 100%;
   object-fit: contain;
+}
+
+/**
+  CONTATO
+**/
+
+#contato .form {
+  position: relative;
+}
+
+#contato .form .form-control {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-color: #BCE0FD;
+  border-radius: 10px;
+}
+
+#contato .form .form-control::placeholder {
+  color: #0A4D9585;
+}
+
+#contato .form .form-group {
+  position: relative;
+}
+
+#contato .btn-custom {
+  display: block;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #FFF;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  float: right !important;
+}
+
+
+#contato .form .form-group .icone {
+  position: absolute;
+  top: 44px;
+  right: 14px;
+}
+
+
+#contato .endereco-consultorio {
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  padding: 1rem;
+}
+
+#contato .endereco-consultorio .bold {
+  text-align: center;
+}
+
+#contato .endereco-consultorio ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-left: 10px;
+  margin-bottom: 1rem;
+}
+
+#contato .endereco-consultorio ul li span {
+  padding-left: 10px;
 }
 
 
