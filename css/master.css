@@ -950,6 +950,13 @@ header#header .wrapper {
   width: 100%;
 }
 
+@media(max-width: 768px) {
+  #doutor .banner img {
+    object-fit: cover;
+    height: 250px;
+  }
+}
+
 #doutor .intro {
   margin: 2rem 0;
 }
@@ -1024,27 +1031,29 @@ header#header .wrapper {
   width: 100%;
 }
 
-#doutor .bloco.catarata .cirurgia-catarata {
-  width: 80%;
-  height: 70%;
-  margin: auto;
+#doutor .bloco.catarata .cirurgia-catarata.ilustracao {
   position: relative;
+  text-align: center !important;
+  height: 250px;
+  opacity: 0.6;
 }
 
-#doutor .bloco.catarata .cirurgia-catarata img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: bottom;
-  opacity: 0.5;
+.webp #doutor .bloco.catarata .cirurgia-catarata.ilustracao {
+    background: center/cover url("../imagens/WEBP/catarata/cirurgia_catarata[960x716].webp") no-repeat;
 }
 
-#doutor .bloco.catarata .cirurgia-catarata .bold {
+.no-webp #doutor .bloco.catarata .cirurgia-catarata.ilustracao {
+    background: center/cover url("../imagens/JPG/catarata/cirurgia_catarata[960x716].jpg") no-repeat;
+}
+
+.webp #doutor .bloco.catarata .conteudo {
   position: absolute;
   top: 50%;
-  left: 20%;
-  text-align: center;
-  /* transform: translate(-50%, -50%); */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#doutor .bloco.catarata .bold {
+    text-align: center !important;
 }
 
 #doutor .bloco.catarata .btn-custom {
@@ -1052,11 +1061,16 @@ header#header .wrapper {
   text-decoration: none;
   background-color: var(--primary-color);
   color: #FFF;
-  padding: 1rem 4rem;
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translate(-50%);
+  width: 150px;
+  padding: .5rem 0;
+  text-align: center !important;
+  margin: auto;
+}
+
+@media(max-width: 768px) {
+  #doutor .bloco.catarata .conteudo .bold {
+    font-size: 26px;
+  }
 }
 
 
