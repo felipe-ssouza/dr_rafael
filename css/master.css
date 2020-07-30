@@ -1079,6 +1079,42 @@ header#header .wrapper {
 }
 
 
+
+/**
+  CATARATA INTERNA
+**/
+
+#catarata {
+  margin-top: 100px;
+  color: var(--primary-color);
+}
+
+#catarata .row {
+  margin-bottom: 2rem;
+}
+
+#catarata .bold {
+  margin: 2rem 0;
+}
+
+#catarata .ilustracao {
+  height: 75%;
+  width: 100%;
+}
+
+#catarata .ilustracao img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  #catarata .ilustracao {
+    height: 100%;
+  }
+}
+
 /* /FOOTER/ */
 
 #footer {
