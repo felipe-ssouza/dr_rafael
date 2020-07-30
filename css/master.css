@@ -166,7 +166,7 @@ header#header .wrapper {
 }
 
 .logo .semibold {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* MENU */
@@ -207,6 +207,10 @@ header#header .wrapper {
   z-index: 999;
   outline: none;
   transition: ease all 1s;
+}
+
+.mobile {
+  display: none;
 }
 
 .shadow {
@@ -253,6 +257,10 @@ header#header .wrapper {
 }
 
 @media only screen and (max-width: 992px) {
+
+  .mobile {
+    display: block;
+  }
 
   .logo .conteudo {
     transition: ease all 1s;
