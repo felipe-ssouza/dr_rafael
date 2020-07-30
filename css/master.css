@@ -1081,28 +1081,28 @@ header#header .wrapper {
 
 
 /**
-  CATARATA INTERNA
+  interna (CATARATA GLAUCOMA E OFTALMOLOGIA)
 **/
 
-#catarata, #glaucoma {
+.interna {
   margin-top: 100px;
   color: var(--primary-color);
 }
 
-#catarata .row, #glaucoma .row {
+.interna .row {
   margin-bottom: 2rem;
 }
 
-#catarata .bold, #glaucoma .bold {
+.interna .bold {
   margin: 2rem 0;
 }
 
-#catarata .ilustracao, #glaucoma .ilustracao {
+.interna .ilustracao {
   height: 75%;
   width: 100%;
 }
 
-#catarata .ilustracao img, #glaucoma .ilustracao img{
+.interna .ilustracao img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -1110,7 +1110,7 @@ header#header .wrapper {
 
 
 @media (max-width: 768px) {
-  #catarata .ilustracao, #glaucoma .ilustracao {
+  .interna .ilustracao {
     height: 100%;
   }
 }
